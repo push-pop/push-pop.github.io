@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+}
+
+.jumbotron {
+    height: 100%;
+    margin: 0;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+#contact {
+    background-image: url(../img/contact_bg.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-default .navbar-nav > .active {
+    color: #fff;
+    background: #d65c14;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff !important;
+    background: rgba(127, 127, 127, .9);
+}
+
+.resume {
+    text-align: left
+}
+
+.resumeBullets {
+    text-align: left;
+}
+
+.subjectArea {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    color: #FF9933;
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #FF9933;
+    background: rgba(120, 120, 120, 0.6);
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn-social i {
+    color: #fff;
+}
+
+a {
+    color: grey !important;
+}
+
+a:hover {
+    color: #FF9933 !important;
+}
+
+i {
+    transition: all .2s ease-in-out;
+}
+
+i:hover {
+    transform: scale(1.1);
+    color: #FF9933;
+}
