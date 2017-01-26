@@ -87,6 +87,10 @@ h2 {
 a {
     color: grey !important;
 }
+p a
+{
+    color: #FF9933 !important;
+}
 
 a:hover {
     color: #FF9933 !important;
