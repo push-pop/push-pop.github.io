@@ -28,26 +28,18 @@
 
 <body id="page-top" class="index">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar hidden-xs navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#page-top"><small>NateTurley.com</small> </a> </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, fo  rms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!--
-               <li class="page-scroll">
-    <a href="#page-top">About //</a>
-</li>
--->
-                    <li class="page-scroll"> <a href="#installation">Installation //</a> </li>
-                    <li class="page-scroll"> <a href="#lab">Lab //</a> </li>
-                    <li class="page-scroll"> <a href="#contact">Contact //</a> </li>
-                    <li> <a href="#resumeModal" data-toggle="modal">Resume //</a> </li>
+                    <li class="page-scroll nav-btn"> <a href="#page-top">Top //</a> </li>
+                    <li class="page-scroll nav-btn"> <a href="#installation">Selected Projects //</a> </li>
+                    <li id="Contact" class="page-scroll nav-btn"> <a href="#contact">Contact //</a> </li>
+                    <li> <a href="#resumeModal" data-target="#resumeModal" data-toggle="modal">Resume //</a> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -57,128 +49,158 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="row text-center">
-                <h2 class="name"> Nate Turley</h2>
-                <p>Experiential Engineer</p>
-                <hr>
-                <div class="col-md-4 ">
-                    <div class="subjectArea"> <i class="fa fa-code fa-5x"></i> </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="subjectArea"> <i class="fa fa-cubes fa-5x"></i> </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="subjectArea"> <i class="fa fa-connectdevelop fa-5x"></i> </div>
-                </div>
-            </div>
-            <div class="row text-left">
+            <div class="col-xs-12 col-md-4 text-center"> <img class="headshot img-responsive" src="img/headshotbw.png" /> </div>
+            <div class="col-xs-12 col-md-8 text-left">
                 <div class="subjectArea">
+                    <h2 class="name"> Nate Turley</h2>
                     <hr class="small">
-                    <p>Nate is a freelance creative technologist and media artist based in Brooklyn, NYC specializing in creating custom hardware and software solutions for interactive audio visual installations, digital event activations, and live performance. He holds a Bachelor of Science in Electrical and Computer Engineering from The University of Colorado.</p>
-                    <p>His areas of expertise and explorations include computer vision, machine learning, virtual and augmented reality, large scale touch screens, audio visual systems, interactive art, projection mapping and more. He has produced work which has been installed or exhibitied all over the US and in Western Europe. </p>
+                    <p>Nate is a freelance creative technologist and media artist based in Brooklyn, NYC specializing in creating custom hardware and software systems for interactive audio visual installations, digital event activations, and live performance. He holds a Bachelor of Science in Electrical and Computer Engineering from The University of Colorado.</p>
+                    <p>His areas of expertise and explorations include computer vision, machine learning, virtual and augmented reality, large scale touch screens, audio visual systems, interactive art, projection mapping and more. He has installed work all over the US and abroad. </p>
+                    <p> He's creates work OpenFrameworks, Cinder, Unity3D, TouchDesigner, Max/MSP, among others and thrives on learning new techniques and tools </p>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Portfolio Grid Section -->
     <section id="installation" class="portfolio-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Installation</h2>
+                <div class="col-lg-12 text-center"> <a href="#installation"><h2>Selected Projects</h2></a>
                     <hr> </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Ford Sound Journeys</p>
-                            </div>
-                        </div> <img src="img/portfolio/soundJourneys.jpg" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Volumetric LED Display</p>
-                            </div>
-                        </div> <img src="img/portfolio/volumetricDisplay.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>T-Mobile Signature Stores</p>
-                            </div>
-                        </div> <img src="img/portfolio/tMobile.jpg" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal0" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Hacking Spaces</p>
-                            </div>
-                        </div> <img src="img/portfolio/9to5.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>NRF 2014</p>
-                            </div>
-                        </div> <img src="img/portfolio/rzrsurf.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Amway NCOH</p>
-                            </div>
-                        </div> <img src="img/portfolio/ncoh.png" class="img-responsive" alt=""> </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="lab" class="portfolio-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>LAB</h2>
-                    <hr> </div>
+                <!-- A basic setup of multifilter controls, when the user toggles a category
+            the corresponding items are rendered or hidden -->
+                <ul class="col-md-12 span12  simplefilter">
+                    <li class="active" data-filter="all">All //</li>
+                    <li data-filter="1">Experiential //</li>
+                    <li data-filter="2">Retail //</li>
+                    <li data-filter="5">Exhibit //</li>
+                    <li data-filter="3">Art //</li>
+                    <li data-filter="4">Prototype //</li>
+                </ul>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#labModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>VJ Work</p>
+                <div class="filtr-container filteringModeSingle">
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3, 5" data-sort="Sound Journeys">
+                        <a href="#setItOff" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/SetItOff.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>Set it off VR Experience</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Museum Of Sex
+                                        <br><b>Agency: </b>Superbright</p>
+                                </div>
                             </div>
-                        </div> <img src="img/portfolio/vj.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#labModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Story Cubes</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Sound Journeys">
+                        <a href="#dwntwnmen" class="portfolio-link" data-toggle="modal"><img class="img-responsive" src="img/portfolio/dwntwnmen.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>DWNTWNMEN Party LA</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Hermès
+                                        <br><b>Agency: </b>Mash Studio</p>
+                                </div>
                             </div>
-                        </div> <img src="img/portfolio/charger.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#labModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>HoloLens</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3" data-sort="Sound Journeys">
+                        <a href="#soundJourneys" class="portfolio-link" data-toggle="modal"><img class="img-responsive" src="img/portfolio/soundJourneys.jpg" alt="sample image">
+                            <div class="item-desc">
+                                <h4>Sound Journeys</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Ford + B&O Play
+                                        <br><b>Agency: </b>Studio Studio</p>
+                                </div>
                             </div>
-                        </div> <img src="img/portfolio/hololens.png" class="img-responsive" alt=""> </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content"> <i class="fa fa-plus fa-3x"></i>
-                                <p>Human Kaleidoscope</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Sound Journeys">
+                        <a href="#gifbooth" class="portfolio-link" data-toggle="modal"><img class="img-responsive" src="img/portfolio/gifboothr29.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>Gifbooth x SXSW</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Refinery29
+                                        <br><b>Agency: </b>Studio Studio </p>
+                                </div>
                             </div>
-                        </div> <img src="img/portfolio/kaleidoscope.png" class="img-responsive" alt=""> </a>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="T-Mobile">
+                        <a href="#tmobile" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/tMobile.jpg" alt="sample image">
+                            <div class="item-desc">
+                                <h4>T-Mobile Signature Stores</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>T-Mobile
+                                        <br><b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3, 4" data-sort="T-Mobile">
+                        <a href="9to5" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/9to5.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>9to5 Prototype</h4>
+                                <div class="caption-content">
+                                    <p><b>Collaborators:</b>
+                                        <br> Andy Pruett
+                                        <br> Pablo Gnecco </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 2" data-sort="T-Mobile">
+                        <a href="#rzrSurf" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/rzrsurf.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>RZR[Surf]</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Microsoft
+                                        <br><b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="T-Mobile">
+                        <a href="#razorshop" class="portfolio-link" data-toggle="modal"><img class="img-responsive" src="img/portfolio/razorshop.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>RazorShop</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Adobe
+                                        <br><b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="5" data-sort="T-Mobile">
+                        <a href="#ncoh" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/ncoh.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>Center for Optimal Health</h4>
+                                <div class="caption-content">
+                                    <p><b>Client: </b>Amway
+                                        <br><b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" data-sort="HoloLens">
+                        <a href="#holoLens" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/hololens.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>HoloLens Experiments</h4>
+                                <div class="caption-content">
+                                    <p> <b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" data-sort="HoloLens">
+                        <a href="#storyCubes" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/charger.png" alt="sample image">
+                            <div class="item-desc">
+                                <h4>Story Cubes</h4>
+                                <div class="caption-content">
+                                    <p> <b>Agency: </b>Razorfish</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,33 +211,32 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact</h2>
-                    <hr>
-                    <div class="text-center " style=" ">
-                        <ul class="list-inline ">
-                            <li>
-                                <a target="_blank" class="btn-outline btn-social " href="https://twitter.com/turleyn "> <i class="fa fa-twitter "></i> </a>
-                            </li>
-                            <li>
-                                <a target="_blank" class="btn-outline btn-social " href="https://instagram.com/turleyn/ "> <i class="fa fa-instagram "></i> </a>
-                            </li>
-                            <!--
+                    <hr> </div>
+                <div class="text-center " style=" ">
+                    <ul class="list-inline ">
+                        <li>
+                            <a target="_blank" class="btn-outline btn-social " href="https://twitter.com/turleyn "> <i class="fa fa-twitter "></i> </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="btn-outline btn-social " href="https://instagram.com/turleyn/ "> <i class="fa fa-instagram "></i> </a>
+                        </li>
+                        <!--
      <li>
     <a target="_blank" class="btn-outline btn-social " href="http://pushpopped.tumblr.com/ ">
         <i class="fa fa-tumblr "></i>
     </a>
 </li>
 -->
-                            <li>
-                                <a target="_blank" class="btn-outline btn-social " href="mailto:turley.nate@gmail.com "> <i class="fa fa-envelope "></i> </a>
-                            </li>
-                            <li>
-                                <a target="_blank" class="btn-outline btn-social " href="https://github.com/push-pop"> <i class="fa fa-github"></i> </a>
-                            </li>
-                            <li>
-                                <a target="_blank" class="btn-outline btn-social" href="https://www.linkedin.com/pub/nathaniel-turley/45/475/960"> <i class="fa fa-linkedin"></i> </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <a target="_blank" class="btn-outline btn-social " href="mailto:turley.nate@gmail.com "> <i class="fa fa-envelope "></i> </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="btn-outline btn-social " href="https://github.com/push-pop"> <i class="fa fa-github"></i> </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="btn-outline btn-social" href="https://www.linkedin.com/pub/nathaniel-turley/45/475/960"> <i class="fa fa-linkedin"></i> </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -225,7 +246,7 @@
         <a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i> </a>
     </div>
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="9to5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -268,7 +289,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="rzrSurf" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -302,7 +323,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="ncoh" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -334,7 +355,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="humanKaleidoscope" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -373,7 +394,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="ledToolkit" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -417,7 +438,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="tmobile" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -464,7 +485,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="soundJourneys" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -475,7 +496,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Ford Sound Journeys</h2>
+                            <h2>Sound Journeys</h2>
                             <hr>
                             <p> Sound Journeys is a collaboration with <a href="http://theprincipals.us/">The Principals</a> commissioned by Ford and B&O Play. It includes three distinct but connected zones of immersive light, sound, and architecture.</p>
                             <p> I was asked to create a 24 channel spatial audio system and program an audio reactive DMX lighting system. To achieve this, I built two lightweight tools in <b>Open Frameworks</b> which I will be releasing as <a href="https://github.com/push-pop/ofxDBAP">ofxDBAP</a> and <a href="https://github.com/push-pop/ofxOscDMXBouncer">ofxOscDMXBouncer</a> and an audio mixer in <b>Max/MSP.</b> </p>
@@ -506,7 +527,89 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="labModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="setItOff" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sound Journeys</h2>
+                            <hr>
+                            <p> Sound Journeys is a collaboration with <a href="http://theprincipals.us/">The Principals</a> commissioned by Ford and B&O Play. It includes three distinct but connected zones of immersive light, sound, and architecture.</p>
+                            <p> I was asked to create a 24 channel spatial audio system and program an audio reactive DMX lighting system. To achieve this, I built two lightweight tools in <b>Open Frameworks</b> which I will be releasing as <a href="https://github.com/push-pop/ofxDBAP">ofxDBAP</a> and <a href="https://github.com/push-pop/ofxOscDMXBouncer">ofxOscDMXBouncer</a> and an audio mixer in <b>Max/MSP.</b> </p>
+                            <hr/>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://player.vimeo.com/video/192520492" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <p><a href="https://vimeo.com/192520492">Sound Journeys</a> from <a href="https://vimeo.com/drewseskunas">The Principals</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys0.vr.jpg&amp;is_stereo=true"></iframe>
+                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJournesy1.vr.jpg&amp;is_stereo=true"></iframe>
+                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys2.vr.jpg&amp;is_stereo=true"></iframe> <strong><p>Press</p></strong>
+                            <ul class="list-unstyled">
+                                <li><a href="https://media.ford.com/content/fordmedia/fna/us/en/news/2016/09/12/ford--harman-to-revolutionize-in-vehicle-audio-experiences-world.html">Ford Press Release</a></li>
+                                <li> <a href="http://www.frameweb.com/news/the-principals-and-chris-watson-question-how-sound-influences-our-understanding-of-the-world">Frame Magazine</a></li>
+                            </ul>
+                            <ul class="list-inline item-details">
+                                <li> <strong><p><strong>The Principals, Studio Studio</strong> </p>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <p>2016</p>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="dwntwnmen" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>DWNTWNMEN Party LA</h2>
+                            <hr>
+                            <p><a href="http://www.bounceaeg.com/hermes-dwntwnmen/">Project Page</a></p>
+                            <p>Hermès went all out for the launch of their spring Men's line with a massive fashion show and an even bigger party in a warehouse in DTLA. I was hired by <a href="http://mashstudionyc.com/">Mash Studios</a> to produce two interactive experiences for the event. </p>
+                            <h3>Say Something</h3>
+                            <p> Say Something is an </p>
+                            <hr/> <strong><p>Press</p></strong>
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.esquire.com/style/mens-fashion/news/g3271/hermes-downtown-man-fashion-show-la/">Esquire</a></li>
+                                <li> <a href="https://www.nytimes.com/2017/03/10/fashion/hermes-party-los-angeles.html?_r=0">The New York Times</a> </li>
+                                <li><a href="http://www.latimes.com/fashion/la-ig-hermes-la-menswear-show-20170314-story.html">The Los Angeles Times</a></li>
+                                <li><a href="http://www.gq.com/story/hermes-veronique-nichanian-interview-los-angeles">GQ</a></li>
+                                <li> <a href="http://www.vogue.com/article/hermes-mens-show-downtown-la">Vogue</a></li>
+                            </ul>
+                            <ul class="list-inline item-details">
+                                <li> <strong><p><strong>Mash Studios</strong> </p>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <p>2017</p>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="vj" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -569,7 +672,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="labModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="storyCubes" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -599,7 +702,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="portfolio-modal modal fade" id="labModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -714,12 +816,14 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <!--    <script src="js/cbpAnimatedHeader.js"></script>-->
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+    <script src="js/galleryController.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
 </body>
 
 </html>
