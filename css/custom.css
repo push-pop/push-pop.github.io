@@ -1,15 +1,9 @@
 html,
-body {
-    height: 100%;
-}
+body {}
 
 .jumbotron {
     height: 100%;
     margin: 0;
-}
-
-.modal-body {
-    text-align: left;
 }
 
 #contact {
@@ -29,7 +23,7 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff !important;
-    background: rgba(127, 127, 127, .9);
+    background: #212121;
 }
 
 .resume {
@@ -40,11 +34,14 @@ body {
     text-align: left;
 }
 
-.subjectArea {
+
+/*
+.Area {
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 10%;
 }
+*/
 
 h2 {
     color: #FF9933;
@@ -87,8 +84,8 @@ h2 {
 a {
     color: grey !important;
 }
-p a
-{
+
+p a {
     color: #FF9933 !important;
 }
 
@@ -103,4 +100,86 @@ i {
 i:hover {
     transform: scale(1.1);
     color: #FF9933;
+}
+
+.headshot {
+    margin-top: 6em;
+}
+
+.filtr-item {
+    padding: 1rem;
+}
+
+.item-desc {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    padding: .5rem;
+    padding-left: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+.center-block ul {
+    position: relative;
+    left: 50%;
+    float: left;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.center-block li {
+    position: relative;
+    right: 50%;
+    float: left;
+    margin: 0;
+    list-style: none
+}
+
+
+/* Filter controls */
+
+.simplefilter li,
+.multifilter li,
+.sortandshuffle li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+
+.simplefilter li {
+    background-color: #585858;
+}
+
+.simplefilter li.active {
+    background-color: #212121;
+}
+
+.multifilter li {
+    background-color: #4b9eff;
+}
+
+.multifilter li.active {
+    background-color: #2265b4;
+}
+
+{
+    "delay": 25,
+    "filterOutCss": {
+        "opacity": 0, "transform": "scale(0.75)"
+    }
+    ,
+    "filterInCss": {
+        "opacity": 1, "transform": "scale(1)"
+    }
+}
+
+.coming-soon {
+    pointer-events: none;
+    opacity: 0.3;
+    filter: alpha(opacity=40);
 }
