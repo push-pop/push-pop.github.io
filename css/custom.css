@@ -1,5 +1,7 @@
 html,
-body {}
+body {
+    100%;
+}
 
 .jumbotron {
     height: 100%;
