@@ -4,6 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+$(document).keyup(function (e) {
+    if (e.keyCode == 27) { // escape key maps to keycode `27`
+        $('.modal').modal('hide');
+    }
+});
 $(function () {
     $('body').on('click', '.page-scroll a', function (event) {
         var $anchor = $(this);
@@ -12,14 +17,13 @@ $(function () {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    $('.modal').on('hidden.bs.modal', function () {
+        //todo: stop videos
+        //        alert('modalClose: ' + $(this).attr("id"));
+    })
 });
 // Floating label headings for the contact form
 $(function () {
-    $('.nav-btn').click(function () {
-        //        $('section').hide();
-        //        var dest = $($(this).find('a').attr('href'));
-        //        dest.show();
-    })
     $("body").on("input propertychange", ".floating-label-form-group", function (e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
     }).on("focus", ".floating-label-form-group", function () {

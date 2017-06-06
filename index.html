@@ -54,9 +54,10 @@
                 <div class="subjectArea">
                     <h2 class="name"> Nate Turley</h2>
                     <hr class="small">
-                    <p>Nate is a freelance creative technologist and media artist based in Brooklyn, NYC specializing in creating custom hardware and software systems for interactive audio visual installations, digital event activations, and live performance. He holds a Bachelor of Science in Electrical and Computer Engineering from The University of Colorado.</p>
+                    <p>Nate is a creative technologist and technical director based in Brooklyn, NYC specializing in creating custom hardware and software systems for interactive audio visual installations, digital event activations, and live performance. He holds a Bachelor of Science in Electrical and Computer Engineering from The University of Colorado.</p>
                     <p>His areas of expertise and explorations include computer vision, machine learning, virtual and augmented reality, large scale touch screens, audio visual systems, interactive art, projection mapping and more. He has installed work all over the US and abroad. </p>
-                    <p> He's creates work OpenFrameworks, Cinder, Unity3D, TouchDesigner, Max/MSP, among others and thrives on learning new techniques and tools </p>
+                    <p> He creates work OpenFrameworks, Cinder, Unity3D, TouchDesigner, Max/MSP, among others and thrives on learning new techniques and tools </p>
+                    <p>Nate is currently serving as technical director of <a href="http://studiostudio.nyc/">Studio Studio</a> as well as accepting freelance clients</p>
                 </div>
             </div>
         </div>
@@ -71,7 +72,7 @@
                 <!-- A basic setup of multifilter controls, when the user toggles a category
             the corresponding items are rendered or hidden -->
                 <ul class="col-md-12 span12  simplefilter">
-                    <li class="active" data-filter="all">All //</li>
+                    <li id="filter-all" class="active" data-filter="all">All //</li>
                     <li data-filter="1">Experiential //</li>
                     <li data-filter="2">Retail //</li>
                     <li data-filter="5">Exhibit //</li>
@@ -81,15 +82,16 @@
             </div>
             <div class="row">
                 <div class="filtr-container filteringModeSingle">
-                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3, 5" data-sort="Sound Journeys">
-                        <a href="#setItOff" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/SetItOff.png" alt="sample image">
+                    <div class="coming-soon col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3, 5" data-sort="Sound Journeys">
+                        <a href="#none" class="coming-soon portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/SetItOff.png" alt="sample image">
                             <div class="item-desc">
-                                <h4>Set it off VR Experience</h4>
-                                <div class="caption-content">
-                                    <p><b>Client: </b>Museum Of Sex
-                                        <br><b>Agency: </b>Superbright</p>
-                                </div>
-                            </div>
+                                <h4>Coming Soon</h4>
+                                <!--
+<div class="caption-content">
+    <p><b>Client: </b>Museum Of Sex
+        <br><b>Agency: </b>Superbright</p>
+</div>
+--></div>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Sound Journeys">
@@ -137,7 +139,7 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3, 4" data-sort="T-Mobile">
-                        <a href="9to5" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/9to5.png" alt="sample image">
+                        <a href="#ninetofive" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/9to5.png" alt="sample image">
                             <div class="item-desc">
                                 <h4>9to5 Prototype</h4>
                                 <div class="caption-content">
@@ -182,7 +184,7 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" data-sort="HoloLens">
-                        <a href="#holoLens" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/hololens.png" alt="sample image">
+                        <a href="#hololens" class="portfolio-link" data-toggle="modal"> <img class="img-responsive" src="img/portfolio/hololens.png" alt="sample image">
                             <div class="item-desc">
                                 <h4>HoloLens Experiments</h4>
                                 <div class="caption-content">
@@ -246,7 +248,7 @@
         <a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i> </a>
     </div>
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="9to5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="ninetofive" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -260,7 +262,14 @@
                             <h2>Hacking Spaces</h2>
                             <hr>
                             <p><b>Update: Congratulations to the 9to5 team for winning the competition!</b></p>
-                            <p> I was asked to participate in a piece of experimental programming for 9to5, an entry into The Field Experiment art grant competition hosted by The Goat Farm Arts Center and The Hambidge Center. The piece that I created in collaboration with Andy Pruett reflected on the control we allow online bots to have in our lives be it through algorithmic sorting of facebook posts or the "matches" we get sent to our online dating profiles. Specifically, what happens as these bots start to break away from the net and we invite them into our homes in the forms of products like Amazon Echo. </p> <img class="img-responsive" src="img/portfolio/hack_0.JPG" />
+                            <h4>Project Roles</h4>
+                            <p>Resident Hacker</p>
+                            <h4>Collaborators</h4>
+                            <p>Andy Pruett, Pablo Gnecco</p>
+                            <h4>Studio</h4>
+                            <p>Studio Studio</p>
+                            <h4>Project Description</h4>
+                            <p>I was asked to participate in a piece of experimental programming for 9to5, an entry into The Field Experiment art grant competition hosted by The Goat Farm Arts Center and The Hambidge Center. The piece that I created in collaboration with Andy Pruett reflected on the control we allow online bots to have in our lives be it through algorithmic sorting of facebook posts or the "matches" we get sent to our online dating profiles. Specifically, what happens as these bots start to break away from the net and we invite them into our homes in the forms of products like Amazon Echo. </p> <img class="img-responsive" src="img/portfolio/hack_0.JPG" />
                             <br/>
                             <p>The installations consisted of first hacking the chat window of <a href="www.9to5.tv">9to5.tv</a> with injected javascript to forward messages to a slack channel. On the slack channel were bots that listened for certain key phrases and commands that altered the physical space that we were hacking from. The bots themselves then started a dialogue with each other, creating feedback loops where the physical space was altered in a continuous manner. </p>
                             <div class="embed-responsive embed-responsive-4by3">
@@ -451,6 +460,13 @@
                         <div class="modal-body">
                             <h2>T-Mobile Signature Stores</h2>
                             <hr>
+                            <h4>Project Roles</h4>
+                            <p>Software Engineering, Install</p>
+                            <h4>Client</h4>
+                            <p>T-Mobile</p>
+                            <h4>Agency</h4>
+                            <p>Razorfish</p>
+                            <h4>Project Description</h4>
                             <h3>
                                 Times Square, NYC
                             </h3>
@@ -498,16 +514,22 @@
                         <div class="modal-body">
                             <h2>Sound Journeys</h2>
                             <hr>
+                            <h4>Project Roles</h4>
+                            <p>Technical direction, lead development</p>
+                            <h4>Client</h4>
+                            <p> Ford Motor</p>
+                            <h4>Studio</h4>
+                            <p>The Principals</p>
+                            <h4>Tech</h4>
+                            <p>Max/MSP, OpenFrameworks</p>
+                            <h4>Project Description</h4>
                             <p> Sound Journeys is a collaboration with <a href="http://theprincipals.us/">The Principals</a> commissioned by Ford and B&O Play. It includes three distinct but connected zones of immersive light, sound, and architecture.</p>
                             <p> I was asked to create a 24 channel spatial audio system and program an audio reactive DMX lighting system. To achieve this, I built two lightweight tools in <b>Open Frameworks</b> which I will be releasing as <a href="https://github.com/push-pop/ofxDBAP">ofxDBAP</a> and <a href="https://github.com/push-pop/ofxOscDMXBouncer">ofxOscDMXBouncer</a> and an audio mixer in <b>Max/MSP.</b> </p>
                             <hr/>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe src="https://player.vimeo.com/video/192520492" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             </div>
-                            <p><a href="https://vimeo.com/192520492">Sound Journeys</a> from <a href="https://vimeo.com/drewseskunas">The Principals</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys0.vr.jpg&amp;is_stereo=true"></iframe>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJournesy1.vr.jpg&amp;is_stereo=true"></iframe>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys2.vr.jpg&amp;is_stereo=true"></iframe> <strong><p>Press</p></strong>
+                            <p><a href="https://vimeo.com/192520492">Sound Journeys</a> from <a href="https://vimeo.com/drewseskunas">The Principals</a> on <a href="https://vimeo.com">Vimeo</a>.</p> <strong><p>Press</p></strong>
                             <ul class="list-unstyled">
                                 <li><a href="https://media.ford.com/content/fordmedia/fna/us/en/news/2016/09/12/ford--harman-to-revolutionize-in-vehicle-audio-experiences-world.html">Ford Press Release</a></li>
                                 <li> <a href="http://www.frameweb.com/news/the-principals-and-chris-watson-question-how-sound-influences-our-understanding-of-the-world">Frame Magazine</a></li>
@@ -538,28 +560,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Sound Journeys</h2>
+                            <h2>Set It OFf VR</h2>
                             <hr>
-                            <p> Sound Journeys is a collaboration with <a href="http://theprincipals.us/">The Principals</a> commissioned by Ford and B&O Play. It includes three distinct but connected zones of immersive light, sound, and architecture.</p>
-                            <p> I was asked to create a 24 channel spatial audio system and program an audio reactive DMX lighting system. To achieve this, I built two lightweight tools in <b>Open Frameworks</b> which I will be releasing as <a href="https://github.com/push-pop/ofxDBAP">ofxDBAP</a> and <a href="https://github.com/push-pop/ofxOscDMXBouncer">ofxOscDMXBouncer</a> and an audio mixer in <b>Max/MSP.</b> </p>
+                            <h4>Project Roles</h4>
+                            <p>Shader Programming</p>
+                            <h4>Client</h4>
+                            <p>Museum of Sex</p>
+                            <h4>Studio</h4>
+                            <p>SuperBright</p>
+                            <h4>Project Description</h4>
+                            <p> Set it off is multiuser virtual reality experience based on the music video for Diplo's Set It Off. </p>
                             <hr/>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe src="https://player.vimeo.com/video/192520492" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                            <p><a href="https://vimeo.com/192520492">Sound Journeys</a> from <a href="https://vimeo.com/drewseskunas">The Principals</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys0.vr.jpg&amp;is_stereo=true"></iframe>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJournesy1.vr.jpg&amp;is_stereo=true"></iframe>
-                            <iframe width="100%" height="300px" allowfullscreen="" frameborder="0" src="//storage.googleapis.com/vrview/2.0/index.html?image=https://dl.dropboxusercontent.com/u/19504587/soundJourneys2.vr.jpg&amp;is_stereo=true"></iframe> <strong><p>Press</p></strong>
-                            <ul class="list-unstyled">
-                                <li><a href="https://media.ford.com/content/fordmedia/fna/us/en/news/2016/09/12/ford--harman-to-revolutionize-in-vehicle-audio-experiences-world.html">Ford Press Release</a></li>
-                                <li> <a href="http://www.frameweb.com/news/the-principals-and-chris-watson-question-how-sound-influences-our-understanding-of-the-world">Frame Magazine</a></li>
-                            </ul>
                             <ul class="list-inline item-details">
-                                <li> <strong><p><strong>The Principals, Studio Studio</strong> </p>
+                                <li> <strong><p><strong>SuperBright</strong> </p>
                                     </strong>
                                 </li>
                                 <li>
-                                    <p>2016</p>
+                                    <p>2017</p>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -583,9 +600,20 @@
                             <h2>DWNTWNMEN Party LA</h2>
                             <hr>
                             <p><a href="http://www.bounceaeg.com/hermes-dwntwnmen/">Project Page</a></p>
+                            <h4>Project Roles</h4>
+                            <p>Technical Direction, Lead Development</p>
+                            <h4>Client</h4>
+                            <p>Hermès</p>
+                            <h4>Studio</h4>
+                            <p>Mash Studios</p>
+                            <h4>Project Description</h4>
                             <p>Hermès went all out for the launch of their spring Men's line with a massive fashion show and an even bigger party in a warehouse in DTLA. I was hired by <a href="http://mashstudionyc.com/">Mash Studios</a> to produce two interactive experiences for the event. </p>
-                            <h3>Say Something</h3>
-                            <p> Say Something is an </p>
+                            <h5>Say Something</h5>
+                            <p> Say Something is a mobile driven interactive projection where users are invited to send a message via SMS to be projected on a wall.
+                                <br/> <b>Technologies Used: </b>OpenFrameworks, Node.js, Twilio</p>
+                            <h5>Silk Records</h5>
+                            <p> I built a system to play digital files using a Serato timecode record. The file was triggered by placing an RFID enabled record sleeve on to a shelf.
+                                <br/> <b>Technologies Used: </b>Node.js, Raspberry Pi, xwax</p>
                             <hr/> <strong><p>Press</p></strong>
                             <ul class="list-unstyled">
                                 <li><a href="http://www.esquire.com/style/mens-fashion/news/g3271/hermes-downtown-man-fashion-show-la/">Esquire</a></li>
@@ -600,6 +628,88 @@
                                 </li>
                                 <li>
                                     <p>2017</p>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="razorshop" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Razorshop</h2>
+                            <hr>
+                            <h4>Project Roles</h4>
+                            <p>Software Development, Demo Training</p>
+                            <h4>Client</h4>
+                            <p>Adobe</p>
+                            <h4>Agency</h4>
+                            <p>Razorfish</p>
+                            <h4>Project Description</h4>
+                            <p>Razorshop is a BLE enabled shopping multiscreen shopping platform I helped develop while at Razorfish. It was picked up by Adobe and used heavlily in their marketing efforts in 2015. I personally took the demo to many events including Adobe Summit in London and DMEXCO in Cologne. In both locations, I helped train local Razorfish employees on the platform, so that they could take demos all over EMEA.</p>
+                            <p>It was one of the projects that led Adobe to name Publicis their digital marketing partner of the year in 2016</p>
+                            <hr/> <strong><p>Press</p></strong>
+                            <ul class="list-unstyled">
+                                <li><a href="https://blogs.adobe.com/digitaleurope/digital-marketing/razorshop-the-future-of-retail/">Adobe Europe</a></li>
+                                <li> <a href="http://adage.com/article/agency-news/agencies-grow-intellectual-property-assets-tech/303503/">AdAge</a> </li>
+                                <li><a href="https://www.heise.de/newsticker/meldung/Online-Marketing-Messe-dmexco-waechst-2815417.html">heise.de</a></li>
+                            </ul>
+                            <ul class="list-inline item-details">
+                                <li> <strong><p><strong>Razorfish Emerging Experiences</strong> </p>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <p>2015</p>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="gifbooth" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Gifbooth X sxsw</h2>
+                            <hr>
+                            <h4>Project Roles</h4>
+                            <p>Technical Direction, Lead Development, Install</p>
+                            <h4>Client</h4>
+                            <p>Refinery29</p>
+                            <h4>Studio</h4>
+                            <p>Studio Studio</p>
+                            <h4>Project Description</h4>
+                            <p>Partnered with Refinery29 and <a href="http://reify.nyc/dreamcloset/">Reify</a>, we brought an "augmented reality" gif photobooth to R29's <a href="http://www.creative.r29.com/school-of-self-expression/cksom6fcjsbsn8dovzw4bpkov7z3jo">School of Self Expression</a> at SXSW in 2016. After picking out some pieces of Neiman Marcus clothing and getting a demo of the Reify AR shopping platform, users were welcomed to step into our photo booth where their choices of clothing created custom overlays while a gif is captured. Users were then able to share the capture on twitter and @ themselves directly from the booth. Brand ambasadors were also standing by with a tablet to share via email or instagram.
+                                <br/> My role on the project was building the software for the booth and integrating with a node.js server running locally on the booth which takes care of uploading to an event specific microsite, and triggering the tweets. </p>
+                            <hr/> <strong><p>Press</p></strong>
+                            <ul class="list-unstyled"> </ul>
+                            <ul class="list-inline item-details">
+                                <li> <strong><p><strong>Studio Studio</strong> </p>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <p>2016</p>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -703,7 +813,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="labModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="hololens" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -718,7 +828,7 @@
                             <hr>
                             <p> I have been extremely lucky to be among the first deveopers in the world to get my hands on a Microsoft HoloLens device. I have been spending a good portion of my time researching the possibilities and potential of this groundbreaking device. Here is the progress I have made. Demos are made using Unity3D. </p>
                             <br/>
-                            <h2><a href="https://medium.com/@turleyn/hololens-gpu-experiments-e4ed14201df6">Medium post on GPU experiments with HoloLens</a></h2>
+                            <h4><a href="https://medium.com/@turleyn/hololens-gpu-experiments-e4ed14201df6">Medium post on GPU experiments with HoloLens</a></h4>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0Vs8_c7YlXI" frameborder="0" allowfullscreen></iframe>
                             </div>

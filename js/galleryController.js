@@ -3,7 +3,7 @@ $(function () {
     $('.simplefilter li').click(function () {
         $('.simplefilter li').removeClass('active');
         $(this).addClass('active');
-        $(this).find('project-desc')
+        //        $(this).find('project-desc')
     });
     //Multifilter controls
     $('.multifilter li').click(function () {
@@ -13,11 +13,15 @@ $(function () {
     $('.shuffle-btn').click(function () {
         $('.sort-btn').removeClass('active');
     });
-    //Sort controls
-    $('.sort-btn').click(function () {
-        $('.sort-btn').removeClass('active');
-        $(this).addClass('active');
-    });
+    $('.nav-btn').click(function () {
+            //        $('section').hide();
+            //        var dest = $($(this).find('a').attr('href'));
+            //        dest.show();
+            $('.filtr-container').filterizr();
+            $('.simplefilter li').removeClass('active');
+            $('#filter-all').addClass('active');
+        })
+        //Sort controls
     $('.filtr-item').on({
         mouseenter: function () {
             $(this).find(".caption-content").stop().animate({
