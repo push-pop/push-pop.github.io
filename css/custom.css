@@ -104,7 +104,7 @@ i:hover {
 }
 
 .headshot {
-    margin-top: 6em;
+    margin-top: 5em;
 }
 
 .filtr-item {
@@ -150,6 +150,7 @@ i:hover {
     display: inline-block;
     text-transform: uppercase;
     padding: 1rem 2rem;
+    margin-bottom: .3rem;
 }
 
 .simplefilter li {
