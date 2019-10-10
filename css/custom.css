@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+.container.particles{
+    color: whitesmoke
+}
+
 #contact {
     background-image: url(../img/contact_bg.JPG);
     -webkit-background-size: cover;
