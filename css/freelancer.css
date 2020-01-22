@@ -228,7 +228,7 @@ section.success {
     transition: all ease .5s;
 }
 
-.portfolio-wrapper .portfolio-item .portfolio-link .caption:hover {
+/* .portfolio-wrapper .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
@@ -245,7 +245,7 @@ section.success {
 }
 
 .caption-content {
-    display: none
+    display: none;
 }
 
 .portfolio-wrapper .portfolio-item .portfolio-link .caption .caption-content i {
@@ -255,7 +255,7 @@ section.success {
 .portfolio-wrapper .portfolio-item .portfolio-link .caption .caption-content h3,
 .portfolio-wrapper .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
-}
+} */
 
 .portfolio-wrapper * {
     z-index: 2;

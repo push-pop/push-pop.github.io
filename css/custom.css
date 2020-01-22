@@ -16,24 +16,24 @@ body {
     background-size: cover;
 }
 
-.navbar-default .navbar-nav > .active {
+.navbar-default .navbar-nav>.active {
     color: #212121;
     background: #d65c14;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     color: #fff !important;
     background: #212121;
 }
 
 .sticky-sidebar {
-    position:fixed;
+    position: fixed;
     max-width: 20%;
     margin-left: 1%;
     margin-top: -.2%;
-    }
+}
 
 .resume {
     text-align: left
@@ -43,6 +43,20 @@ body {
     text-align: left;
 }
 
+.video-thumb {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.img-responsive-16by9 {
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    object-fit: cover;
+}
 
 /*
 .Area {
@@ -60,11 +74,12 @@ h2 {
     margin-top: 15px;
     border: solid 2px #fff;
     font-size: 20px;
-    color:whitesmoke;
+    color: whitesmoke;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
-.sidebar{
+
+.sidebar {
     position: fixed;
     width: 180px;
     height: 100%;
@@ -81,11 +96,13 @@ h2 {
     color: #FF9933;
     background: rgba(120, 120, 120, 0.6);
 }
-.bio{
+
+.bio {
     padding-right: 5em;
     color: white;
     font-weight: 100;
 }
+
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -131,7 +148,8 @@ i:hover {
 .filtr-item {
     padding: 1rem;
 }
-#about{
+
+#about {
     padding-bottom: 5rem;
 }
 
@@ -140,11 +158,13 @@ i:hover {
     color: white;
     position: absolute;
     padding: .5rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     z-index: 1;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
 }
 
 .center-block ul {
@@ -198,6 +218,7 @@ i:hover {
     "filterOutCss": {
         "opacity": 0, "transform": "scale(0.75)"
     }
+
     ,
     "filterInCss": {
         "opacity": 1, "transform": "scale(1)"

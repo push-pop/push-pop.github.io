@@ -27,22 +27,43 @@ $(function () {
             $(this).find(".caption-content").stop().animate({
                 height: "show"
             }, 500, "easeOutQuad"); //.slideDown({});
-            var video = $(this).find("video")
+            var video = $(this).find("video").get(0)
             if (video)
-                video.get(0).play();
+                video.play();
         },
         mouseleave: function () {
             $(this).find(".caption-content").stop().animate({
                 height: "hide"
             }, 500, "easeOutQuad");
-            var video = $(this).find("video")
+            var video = $(this).find("video").get(0)
             if (video) {
-                video.get(0).pause();
+                video.pause();
                 // video.get(0).currentTime = 0;
                 // video.get(0).load();
             }
         }
     });
+    $('.caption-content').animate({
+            height: "hide"
+        }, 0, "easeOutQuad");
+    
+    $('.video-thumb').each(()=>{{
+        var video = this;
+        video.addEventListener('loadedmetadata', () =>{
+            console.log('Loaded');
+            if (video.buffered.length === 0) return;
+        
+            var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+            console.log(bufferedSeconds + ' seconds of video are ready to play!');
+          });
+
+          video.addEventListener('progress',()=>{
+            if (Math.round(video.buffered.end(0)) / Math.round(video.seekable.end(0)) === 1) {
+                // Entire video is downloaded
+                console.log('Downloaded Video');
+             }
+          }, false);
+    }});
     //Initialize filterizr with default options
     $('.filtr-container').filterizr();
 });
