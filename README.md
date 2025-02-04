@@ -1,2 +1,2 @@
 Personal website for Nate Turley
-(C) Nate Turley 2016 All rights reserved
+(C) Nate Turley 2025 All rights reserved
